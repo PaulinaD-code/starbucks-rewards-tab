@@ -91,7 +91,7 @@ body{
   align-items: center;
   justify-content: center;
   background-color: rgb(212, 233, 226); 
-  background-image: url("/images/xl-hero-desktop_2021.webp");
+  background-image: url("images/xl-hero-desktop_2021.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -186,7 +186,7 @@ body{
 
 @media(max-width: 770px){
   .starbucks-reward-joining-container{
-    background-image: url("/images/hero-mobile_2021.webp");
+    background-image: url("images/hero-mobile_2021.webp");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -329,7 +329,7 @@ body{
   box-sizing: border-box;
   width: 100%;
   background-color: #fff;
-  background-image: url('/images/background.webp');
+  background-image: url('images/background.webp');
   background-size: cover;
   padding: 2em;
 }
@@ -351,11 +351,11 @@ body{
 }
 
 .stars-image-1{
-  background-image: url('/images/stars.svg');
+  background-image: url('images/stars.svg');
 }
 
 .stars-image-2{
-  background-image: url('/images/stars-2.svg');
+  background-image: url('images/stars-2.svg');
 }
 
 .rewards-coming-container-subcontent{

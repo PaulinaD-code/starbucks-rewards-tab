@@ -1,0 +1,719 @@
+
+@font-face {
+  font-family: 'SoDo Sans';
+  src: url('SoDoSans-Regular.eot');
+  src: url('/font/SoDoSans-Regular.eot');
+  src: local('SoDo Sans Regular'), local('SoDoSans-Regular'),
+      url('/font/SoDoSans-Regular.eot') format('embedded-opentype'),
+      url('/font/SoDoSans-Regular.woff2') format('woff2'),
+      url('/font/SoDoSans-Regular.woff') format('woff'),
+      url('/font/SoDoSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+ padding: 0;
+ margin: 0;
+ font-family: 'SoDo Sans', 'Cabin', 'Outfit', 'SUSE', "Poppins", "Raleway","DM Sans", "Jost" ;
+ src: url('SoDoSans-Regular.ttf');
+ height: 3000px;
+}
+
+/*sticky notes */
+
+.starbucks-sticky-notes{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  color: #fff;
+  background-color:#1e3932;
+  position: sticky;
+  top:0;
+}
+
+.starbucks-sticky-notes-subcontainer{
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  font-size: 15px; 
+  letter-spacing: 0.1em; 
+  display:flex;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.sticky-special-sign{
+  font-size: 6px;
+}
+
+.join-app-anchor{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  display: none;
+}
+
+@media(max-width:770px ){
+  .join-app-anchor{
+    display: block;
+  }
+
+  .starbucks-sticky-notes{
+    padding: .56em;
+  }
+
+  .starbucks-sticky-notes-subcontainer{
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    font-size: 13px; 
+    letter-spacing: 0.1em; 
+    display:flex;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+}
+
+/* main background */
+
+.starbucks-reward-joining-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(212, 233, 226); 
+  background-image: url("/images/xl-hero-desktop_2021.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.reward-joining-subcontianer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.reward-subcontainer-child{
+  display: flex;
+  align-items:center;
+  box-sizing: border-box;
+  width: 50%;
+  height: 90vh;
+  font-weight: 100;
+}
+
+.free-coffe-offer-container{
+  display:flex;
+  flex-direction: column;
+}
+
+.free-coffe-offer-container h2{
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.free-coffe-offer-container{
+  font-size: 19px;
+  font-weight: 100;
+}
+
+.join-button-main{
+   max-width: 100px;
+   max-height: 100px;
+   padding: 4px 2px;
+   text-decoration: none;
+   background-color:#00754A;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 16px;
+   border-radius: 30px;
+   margin: 1em  0;
+}
+
+.sb-textLink{
+  min-width: 21px; 
+  min-height: 21px;
+}
+
+.color-textBlack{
+  color: black;
+}
+
+.sb-minimalized{
+  display:none;
+}
+
+.width-star{
+  background-image:none;
+ }
+
+@media (max-width:1430px){
+  .starbucks-logo{
+    position: absolute;
+    left: 1%;
+  }
+  .starbucks-nav{
+    width:88%;
+  }
+  .reward-joining-subcontianer{
+    width:96%;
+  }
+
+  .reward-subcontainer-child{
+    height: 70vh;
+  }
+}
+
+@media(max-width:950px){
+  .reward-subcontainer-child{
+    height: 50vh;
+  }
+}
+
+@media(max-width: 770px){
+  .starbucks-reward-joining-container{
+    background-image: url("/images/hero-mobile_2021.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .reward-joining-subcontianer{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    height: 90vh;
+  }
+
+  .reward-subcontainer-child{
+    align-items:center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30vh;
+    font-weight: 100;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+  }
+
+  .free-coffe-offer-container h2{
+    font-size:28px;
+  }
+
+  .free-coffe-offer-container{
+    font-size: 16px;
+  }
+
+  .join-button-main{
+    max-width: 100px;
+    max-height: 100px;
+    padding: 7px 14px;
+    text-decoration: none;
+    background-color:#00754A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 30px;
+    margin: 1em  auto;
+ }
+
+ .sb-textLink{
+  display:none;
+ }
+
+ .sb-minimalized{
+  display:block;
+ }
+}
+
+/* getting starting container styling */
+
+.getting-started-container{
+  padding: 5em 0;
+  font-weight: lighter;
+}
+
+.getting-started-subcontainer{
+  width: 100%;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 2em 0;
+}
+
+.getting-started-subcontainer-content{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.getting-started-subcontainer-content h2{
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.getting-started-easy-container{
+  width: 55%;
+  text-align: center;
+  margin: 2em auto;
+}
+
+.cash{
+  width:40%;
+}
+
+.getting-started-easy-container h2{
+  font-weight: bold;
+}
+
+.creating-account-steps-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creating-step-number-container{
+  width: 1.9em;
+  height: 1.9em;
+  border-radius: 50%;
+  border: 1.5px solid #006241;;
+  font-size: 1.5em;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 0 1.5em 0;
+}
+
+.account-creating-step{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+}
+
+.creating-step-title{
+  font-size: 19px;
+  margin: 0  auto 1.3em;
+  font-weight: bold;
+}
+
+.creating-step-instruction{
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+
+/* rewards coming */
+
+.rewards-coming-container{
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  background-image: url('/images/background.webp');
+  background-size: cover;
+  padding: 2em;
+}
+
+.rewards-coming-container-main-content{
+  box-sizing: border-box;
+  background-color: #D4E9E2;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  padding: 1em;
+}
+
+.background-stars-container{
+  width: 288px;
+  height: 518px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stars-image-1{
+  background-image: url('/images/stars.svg');
+}
+
+.stars-image-2{
+  background-image: url('/images/stars-2.svg');
+}
+
+.rewards-coming-container-subcontent{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1550px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:60%;
+}
+
+.spaced{
+  width: 95%;
+}
+
+.starbucks-cooperators-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin:0 0 2em 0;
+}
+
+.starbucks-cooperators-subcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: .7em;
+  width: 50%;
+}
+
+.cooperators-img{
+  width:190px;
+  height: 85px;
+}
+
+.stars-img{
+  width: 288px;
+  height: 518px;
+}
+
+.cooperators-anchor-tag{
+  color: #fff;
+  font-size: 16px;
+  background-color: #00754A;
+  padding: 7px 16px;
+  width: 220px;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media(max-width:770px){
+  .get-your-favourites-for-free h1{
+    font-size: 24px;
+  }
+
+  .offer-button{
+    font-size: 19px;
+  }
+
+  .color-gold{
+    font-size: 14px;
+  }
+
+  .free-drink-variery-subcontainer{
+    display: flex;
+    flex-direction:column;
+    width:96%
+  }
+
+  .free-offer-child-image{
+    max-width: 585px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transition: 1s ease-in-out;
+  }
+
+  .free-offer-child-description{
+    max-width: 90%;
+    text-align: center;
+    max-height: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s ease-in-out;
+    font-size: 14px;
+    margin: 10em auto 0;
+  }
+
+  .free-offer-img{
+    margin: 0;
+    transition: 1s ease-in-out;
+    width:585px;
+    height:auto;
+  }
+
+  .free-offer-child-description h2{
+    font-size: 19px;
+    text-align: center;
+    margin:0 auto;
+  }
+}
+
+/* question container */
+
+.question-main-container{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 1em 0;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-subcontainer{
+  padding: 4em 0 4em 4em;
+  width:1440px;
+  font-size: 16px;
+  display:flex;
+  flex-direction: column;
+}
+
+.question-subcontainer h2{
+  font-size: 28px;
+}
+
+.question-subcontainer p {
+  width: 60%;
+  line-height: 1.5;
+}
+
+.questiob-subcontainer-margin{
+  margin: 0 0 0 5em;
+}
+
+/* participating container */
+
+.participating-main-container{
+  box-sizing: border-box;
+  background: #f9f9f9;
+  display:block flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+  margin: 0 0 2em 0;
+}
+
+.participating-main-subcontainer{
+  max-width:1440px;
+  padding: 2em;
+  font-size: 14px;
+  line-height: 1.5;;
+}
+
+.participating-terms-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.participating-terms-subcontainer{
+  width: 48%;
+}
+
+.participating-terms-subcontainer h3{
+  font-size: 14px;
+}
+
+/* about us container */
+
+.details-main-container{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  border-top: 3px solid rgb(234, 234, 234);
+  margin: 3em 0 0 0;
+}
+
+.details-main--subcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2em 0;
+  width:1440px;
+}
+  
+.inline-element{
+  border-bottom: 2px solid rgb(230, 230, 230);
+  padding: 2em 0;
+  width: 100%;
+  max-width:1440px;
+  margin: 0;
+}
+  
+.details-main-subcontainer{
+  display: flex;
+  justify-content: flex-start;
+  max-width:1440px;
+  padding: 2em 0;
+}
+
+.details-button-container{
+  display:flex;
+  width:100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  position:relative;
+}
+
+.arrow-down-icon{
+  width:28px;
+  height: 28px;
+  display:none; 
+}
+
+.arrow-down-icon-rotated{
+  display:none;
+}
+
+.details-main-flex{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: flex-start;
+  width:15%;
+  position:relative;
+  height:auto;
+  transition: 1s ease-in-out;
+}
+
+.extra-spacing{
+  width: 19%;
+}
+
+.details-main-flex h2{
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0 0 0 0;
+}
+
+.extra-information{
+  margin: 0 0 5em 0;
+}
+
+.details-main-flex ul{
+  list-style-type: none;
+  padding:0 2em 0 0;
+}
+
+.details-links{
+  list-style-type: none;
+  padding:0 2em 0 0;
+  display:flex;
+  flex-direction: column;
+}
+
+.details-main-flex li,
+.extra-information li{
+  margin:0 0 1.7em 0;
+  font-weight: light;
+}
+
+.extra-information ul{
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.details-main-flex ul a,
+.extra-information ul a {
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 2em 0;
+  line-height: 1.5;
+  color: #00000094;
+}
+
+.button-container{
+    width: 50%;
+    margin: 2em auto;
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4{
+  width:24%;
+}
+
+.line{
+  width: 24%;
+  height: 6px;
+  background-color: green;
+  margin-left: 0;
+}
+
+.first-button{
+  margin-left: 0;
+}
+
+.second-button{
+  margin-left: 25%;
+}
+
+.third-button{
+  margin-left: 49%;
+}
+
+.fourth-button{
+  margin-left: 73%;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

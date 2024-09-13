@@ -1,0 +1,342 @@
+/* navbar */
+
+.starbucks-header{
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: bold;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 6em;
+  margin: 0 0 -1px 0;
+}
+
+.navbar-main-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media(min-width: 1500px){
+  .navbar-main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+
+.starbucks-logo{
+  position: absolute;
+  left: 7%;
+  height: 3.2em;
+}
+
+@media(max-width:1745px){
+  .starbucks-logo{
+    left: 2%;
+  }
+}
+
+.starbuck-logo-img{
+  height:3.2em;
+}
+
+.starbucks-nav{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 center;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.starbucks-sites{
+  display: flex;
+  box-sizing: border-box;
+}
+
+.starbucks-site-container{
+  display: flex;
+  box-sizing: border-box;
+  margin:0 0 0 1em;
+  padding: 2em 0 2em;
+  border-bottom: .6em solid transparent;
+}
+
+.starbucks-site-container a{
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.1em; 
+}
+
+.container-active{
+  border-bottom: .5em solid #00754a;
+}
+
+.starbucks-nav-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-map-button{
+  display: flex;
+  margin: 0 2em 0 0;
+  transition: .2s ease;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.map-icon{
+  display: flex;
+}
+
+.map-img{
+  width: 22px; 
+  height: 22px;
+  width: 2em;
+  overflow: visible; 
+  fill: currentcolor;
+  margin: 0 .5em 0 0;
+}
+
+.store-map-button:hover{
+  color: #00754a;
+  cursor: pointer;
+}
+
+.sign-in-btn,
+.join-now-btn{
+  font: inherit;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 7px 16px;
+  border-radius: 16px;
+  margin: 0 16px 0 0;
+}
+
+.join-now-btn{
+  background-color: black;
+  color: #fff;
+  transition: .2s ease-in-out;
+}
+
+.join-now-btn:hover{
+  opacity: .6;
+  cursor: pointer;
+}
+
+.nav-buttons-01{
+  display: flex;
+}
+
+.burger-menu-btn{
+  position: relative;
+  width:34px;
+  height: 34px;
+  border-radius: 50%;
+  display:none;
+  box-sizing: border-box;
+  margin-left: auto;
+}
+
+.burger-menu-btn span{
+  height: 3px; 
+  width: 80%;
+  background-color: #1e3932;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+.burger-menu-btn span:nth-child(1){
+  top: 25%;
+}
+
+.burger-menu-btn span:nth-child(3){
+  top: 75%;
+}
+
+.burger-menu-btn.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burger-menu-btn.active span:nth-child(2){
+  opacity: 0;
+}
+
+.burger-menu-btn.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mask{
+  background: black;
+  bottom: 0;
+  top:4em;
+  left: 0;
+  opacity: .38;
+  position: fixed;
+  right: 0;
+  height:100vh;
+  width:100%;
+  box-sizing: border-box;
+  z-index:1;
+  display: none;
+}
+
+@media(max-width:770px){
+  .starbucks-header{
+    margin:  0;
+    height: 4em;
+    padding:0 1em;
+  }
+
+  .mask-active{
+    background: black;
+    bottom: 0;
+    top:4em;
+    left: 0;
+    opacity: .38;
+    position: fixed;
+    right: 0;
+    height:100vh;
+    width:100%;
+    box-sizing: border-box;
+    z-index:1;
+    display: block;
+  }
+    
+  .starbuck-logo-img{
+    height:75%;
+    margin-top:15%;
+  }
+
+  .burger-menu-btn{
+    position: relative;
+    margin-left: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger-menu-btn:hover{
+   cursor: pointer;
+   background-color: rgb(243, 241, 241);
+  }
+
+  .starbucks-nav{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    width: 500px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    right: -520px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 3;
+    visibility:hidden;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+    box-sizing: border-box;
+  }
+
+  .starbucks-nav.active{
+    right: 0;
+    visibility:visible;
+  }
+
+  .starbucks-nav-show{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    width: 80%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 3;
+    transition: .6s ease-in-out;
+    visibility:visible;
+    overflow: hidden;
+    border-top: 2px solid rgb(232, 232, 232);
+  }
+  
+  .navbar-main-content{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      max-width: 450px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-left: auto;
+  }
+
+  .starbucks-sites{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2em 0  1em;
+  }
+
+  .starbucks-site-container{
+    display: flex;
+    box-sizing: border-box;
+    margin:0 0 0 1em;
+    padding: 1em 0;
+    border-bottom: .6em solid transparent;
+  }
+  
+  .starbucks-site-container a{
+    display: flex;
+    font-size: 19px;
+    margin: 0;
+    font-weight: lighter;
+    letter-spacing: 0.1em; 
+  }
+  
+  .container-active{
+    border-bottom: .5em solid transparent;
+  }
+
+  .starbucks-nav-buttons{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    border-top: 2px solid rgb(232, 232, 232);
+    width:100%;
+    padding: 2em 0;
+  }
+
+  .store-map-button{
+    display: flex;
+    margin: 1.7em 2em 0 0;
+    transition: .2s ease;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+}

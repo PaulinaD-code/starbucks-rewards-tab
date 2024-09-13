@@ -1,0 +1,366 @@
+/* generated container - get your favourites for free*/
+
+.get-your-favourites-for-free{
+  background-color: #D3E8E158;
+}
+
+.get-your-favourites-for-free h1{
+  font-size: 28px;
+  text-align: center;
+  padding: 1.2em 0;
+}
+
+.reward-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position:relative;
+   z-index: 2;
+   max-width:540px;
+   margin: 0 auto;
+}
+
+.offer-button{
+  width: 108px;
+  height: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+}
+
+.offer-button-green{
+  width: 108px;
+  height: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: 3px solid #00754a;
+}
+
+.offer-button:hover{
+  cursor: pointer;
+}
+
+.offer-button{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.color-gold{
+  font-size: 16px;
+  color: #CBA258;
+}
+
+.free-drink-variery{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2em 0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4e9e2;
+  transition-property: margin-right;
+  transition: 1s ease-in-out;
+}
+
+.free-drink-variery-subcontainer{
+  display: flex;
+  animation: fadeEffect 2s; /* Fading effect takes 1 second */
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.free-offer-child{
+  max-width: 375px;
+  max-height: 211px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+
+.free-offer-img{
+  margin: 0 0 0 0;
+  transition: 1s ease-in-out;
+}
+
+@media(min-width:771px){
+  .free-offer-img{
+    max-width: 375px;
+    max-height: 200px;
+    margin: 0 2em 0 0;
+    transition: 1s ease-in-out;
+  }
+}
+
+.free-drink-variery-subcontainer{
+  display: flex;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+
+.free-offer-child-image{
+  max-width: 375px;
+  max-height: 211px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+
+.free-offer-child-description{
+  max-width: 343px;
+  max-height: 211px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+
+.free-offer-child-description h2{
+  font-size: 24px;
+  margin:0 0 .1em 0;
+}
+
+.order-img{
+  height: 112px;
+  margin: 0 0 24px 0;
+}
+
+.learn-more-anchor{
+  text-decoration:solid;
+  margin: 0;
+  color: #006241;
+  border-bottom: 1px solid #006241;
+}
+
+.payment-main-container{
+  background-color: #F2F0EB;
+  padding: 2em;
+}
+
+.payment-information-container{
+  width: 100%;
+  max-width:1440px;
+  margin: 4em auto 0;
+}
+
+.payment-information-subcontainer{
+  width:100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.payment-offer-description-container{
+  display: flex;
+}
+
+.payment-offer-description{
+  display: flex;
+}
+
+.payment-offer-description-2{
+  display:flex;
+}
+
+.payment{
+  margin:0 0 2em 0;
+  width:240px;
+}
+
+.payment h2{
+  letter-spacing: 0.1em; 
+  margin:0;
+}
+
+.payment p{
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.payment-title{
+  display: flex;
+  font-size: 24px;
+  margin: 4px 0;
+  letter-spacing: 0.1em; 
+  font-weight: bold;
+}
+
+.details-img{
+  width: 112px;
+  height:158px;
+  margin: 0 1em 0 0;
+}
+
+.payment--title{
+  font-size: 19px;
+  font-weight: 600;
+  padding: 0 0 0 4px;
+  margin-top:0;
+}
+
+.payment-offer-description-details p{
+  max-width: 304px;
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.payment-extra-space{
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid rgb(183, 183, 183);
+  margin: 14px 0 38px;
+  opacity: .5;
+}
+
+.payment-star{
+  font-size: 16px;
+}
+
+@media(max-width:1450px){
+  .getting-started-subcontainer-content{
+    width: 88%;
+    padding:0;
+  }
+
+  .payment-information-container{
+    width: 100%;
+    margin: 4em auto 0;
+  }
+
+  .getting-started-easy-container{
+    width: 80%;
+  }
+
+  .payment-information-container{
+    width: 98%;
+    margin: 4em auto 0;
+  }
+}
+
+@media(max-width:990px){
+  .payment-information-container{
+    width: 98%;
+    margin: 4em auto 0;
+  }
+
+  .payment-information-subcontainer{
+    width:100%;
+    flex-direction: column;
+  }
+
+  .payment-offer-description-container{
+    width:100%;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width: 770px){
+  .getting-started-container{
+    padding: 1.5em 0 .2em;
+    font-weight: lighter;
+  }
+
+  .getting-started-easy-container{
+    width: 98%;
+  }
+
+  .getting-started-subcontainer-content{
+    width: 98%;
+    padding:0;
+  }
+
+  .creating-account-steps-container{
+    flex-direction:column;
+  }
+
+  .account-creating-step{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: center;
+    width: 96%;
+    margin: 0 0 1.4em 0;
+  }
+
+  .getting-started-easy-container h2{
+    font-size: 24px;
+  }
+
+  .getting-started-easy-container{
+    font-size: 14px;
+  }
+
+  .creating-step-title{
+    font-size: 16px;
+    margin: 0 0 1.2em 0;
+    font-weight: bold;
+  }
+
+  .creating-step-adnotation{
+    display:flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-around;
+    margin:0 0 1em 2em;
+    text-align: left;;
+  }
+
+  .payment-main-container{
+    background-color: #F2F0EB;
+    padding: 2em 1em;
+  }
+
+  .payment-information-container{
+    width: 98%;
+    margin: 4em auto 0;
+  }
+
+  .payment-information-subcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    border-bottom: 1em black;
+  }
+
+  .payment-title{
+    font-size: 19px;
+    margin:0;
+    display: flex;
+    align-items:center
+  }
+
+  .payment{
+    font-size: 14px;
+    margin: 0 0 2em 0;
+  }
+
+  .payment p{
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  .payment--title{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 0 4px;
+  }
+
+  .payment-offer-description-details p{
+    max-width: 100%;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .payment-offer-description-container{
+    flex-direction:column;
+  }
+}

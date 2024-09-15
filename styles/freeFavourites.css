@@ -129,6 +129,17 @@
   margin:0 0 .1em 0;
 }
 
+@media(max-width:770px){
+  .free-offer-child-description{
+    max-width: 100%;
+    width: 100%;
+    max-height: auto;
+    display: flex;
+    margin: 1em auto;
+    box-sizing: border-box;
+  }
+}
+
 .order-img{
   height: 112px;
   margin: 0 0 24px 0;

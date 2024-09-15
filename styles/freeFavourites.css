@@ -2,6 +2,8 @@
 
 .get-your-favourites-for-free{
   background-color: #D3E8E158;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .get-your-favourites-for-free h1{

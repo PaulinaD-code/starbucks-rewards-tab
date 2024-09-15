@@ -143,6 +143,7 @@
 .payment-main-container{
   background-color: #F2F0EB;
   padding: 2em;
+  box-sizing:border-box;
 }
 
 .payment-information-container{

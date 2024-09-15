@@ -138,6 +138,10 @@
     margin: 1em auto;
     box-sizing: border-box;
   }
+  .free-offer-child-description h2{
+    font-size: 24px;
+    margin:0 auto;
+  }
 }
 
 .order-img{

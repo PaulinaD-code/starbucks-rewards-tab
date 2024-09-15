@@ -441,7 +441,7 @@ body{
   .free-drink-variery-subcontainer{
     display: flex;
     flex-direction:column;
-    width:96%
+    width:96%;
   }
 
   .free-offer-child-image{

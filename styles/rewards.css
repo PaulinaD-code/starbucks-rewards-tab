@@ -248,6 +248,7 @@ body{
 .getting-started-container{
   padding: 5em 0;
   font-weight: lighter;
+  box-sizing: border-box;
 }
 
 .getting-started-subcontainer{

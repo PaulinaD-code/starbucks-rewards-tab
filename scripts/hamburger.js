@@ -18,7 +18,6 @@ function showNav(){
 
 window.addEventListener('click', (event)=>{
   if(event.target.className === 'mask-active js-mask'){
-    console.log('yobla')
     showNav();
     hamburgerBtn.classList.toggle('active');
   }

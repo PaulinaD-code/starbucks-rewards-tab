@@ -448,7 +448,7 @@ body{
   .free-offer-child-image{
     max-width: 585px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     transition: 1s ease-in-out;
   }
